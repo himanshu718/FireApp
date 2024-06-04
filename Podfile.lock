@@ -1,0 +1,810 @@
+PODS:
+  - abseil/algorithm (0.20200225.0):
+    - abseil/algorithm/algorithm (= 0.20200225.0)
+    - abseil/algorithm/container (= 0.20200225.0)
+  - abseil/algorithm/algorithm (0.20200225.0):
+    - abseil/base/config
+  - abseil/algorithm/container (0.20200225.0):
+    - abseil/algorithm/algorithm
+    - abseil/base/core_headers
+    - abseil/meta/type_traits
+  - abseil/base (0.20200225.0):
+    - abseil/base/atomic_hook (= 0.20200225.0)
+    - abseil/base/base (= 0.20200225.0)
+    - abseil/base/base_internal (= 0.20200225.0)
+    - abseil/base/bits (= 0.20200225.0)
+    - abseil/base/config (= 0.20200225.0)
+    - abseil/base/core_headers (= 0.20200225.0)
+    - abseil/base/dynamic_annotations (= 0.20200225.0)
+    - abseil/base/endian (= 0.20200225.0)
+    - abseil/base/errno_saver (= 0.20200225.0)
+    - abseil/base/exponential_biased (= 0.20200225.0)
+    - abseil/base/log_severity (= 0.20200225.0)
+    - abseil/base/malloc_internal (= 0.20200225.0)
+    - abseil/base/periodic_sampler (= 0.20200225.0)
+    - abseil/base/pretty_function (= 0.20200225.0)
+    - abseil/base/raw_logging_internal (= 0.20200225.0)
+    - abseil/base/spinlock_wait (= 0.20200225.0)
+    - abseil/base/throw_delegate (= 0.20200225.0)
+  - abseil/base/atomic_hook (0.20200225.0):
+    - abseil/base/config
+    - abseil/base/core_headers
+  - abseil/base/base (0.20200225.0):
+    - abseil/base/atomic_hook
+    - abseil/base/base_internal
+    - abseil/base/config
+    - abseil/base/core_headers
+    - abseil/base/dynamic_annotations
+    - abseil/base/log_severity
+    - abseil/base/raw_logging_internal
+    - abseil/base/spinlock_wait
+    - abseil/meta/type_traits
+  - abseil/base/base_internal (0.20200225.0):
+    - abseil/base/config
+    - abseil/meta/type_traits
+  - abseil/base/bits (0.20200225.0):
+    - abseil/base/config
+    - abseil/base/core_headers
+  - abseil/base/config (0.20200225.0)
+  - abseil/base/core_headers (0.20200225.0):
+    - abseil/base/config
+  - abseil/base/dynamic_annotations (0.20200225.0)
+  - abseil/base/endian (0.20200225.0):
+    - abseil/base/config
+    - abseil/base/core_headers
+  - abseil/base/errno_saver (0.20200225.0):
+    - abseil/base/config
+  - abseil/base/exponential_biased (0.20200225.0):
+    - abseil/base/config
+    - abseil/base/core_headers
+  - abseil/base/log_severity (0.20200225.0):
+    - abseil/base/config
+    - abseil/base/core_headers
+  - abseil/base/malloc_internal (0.20200225.0):
+    - abseil/base/base
+    - abseil/base/base_internal
+    - abseil/base/config
+    - abseil/base/core_headers
+    - abseil/base/dynamic_annotations
+    - abseil/base/raw_logging_internal
+  - abseil/base/periodic_sampler (0.20200225.0):
+    - abseil/base/core_headers
+    - abseil/base/exponential_biased
+  - abseil/base/pretty_function (0.20200225.0)
+  - abseil/base/raw_logging_internal (0.20200225.0):
+    - abseil/base/atomic_hook
+    - abseil/base/config
+    - abseil/base/core_headers
+    - abseil/base/log_severity
+  - abseil/base/spinlock_wait (0.20200225.0):
+    - abseil/base/base_internal
+    - abseil/base/core_headers
+    - abseil/base/errno_saver
+  - abseil/base/throw_delegate (0.20200225.0):
+    - abseil/base/config
+    - abseil/base/raw_logging_internal
+  - abseil/container/compressed_tuple (0.20200225.0):
+    - abseil/utility/utility
+  - abseil/container/inlined_vector (0.20200225.0):
+    - abseil/algorithm/algorithm
+    - abseil/base/core_headers
+    - abseil/base/throw_delegate
+    - abseil/container/inlined_vector_internal
+    - abseil/memory/memory
+  - abseil/container/inlined_vector_internal (0.20200225.0):
+    - abseil/base/core_headers
+    - abseil/container/compressed_tuple
+    - abseil/memory/memory
+    - abseil/meta/type_traits
+    - abseil/types/span
+  - abseil/memory (0.20200225.0):
+    - abseil/memory/memory (= 0.20200225.0)
+  - abseil/memory/memory (0.20200225.0):
+    - abseil/base/core_headers
+    - abseil/meta/type_traits
+  - abseil/meta (0.20200225.0):
+    - abseil/meta/type_traits (= 0.20200225.0)
+  - abseil/meta/type_traits (0.20200225.0):
+    - abseil/base/config
+  - abseil/numeric/int128 (0.20200225.0):
+    - abseil/base/config
+    - abseil/base/core_headers
+  - abseil/strings/internal (0.20200225.0):
+    - abseil/base/config
+    - abseil/base/core_headers
+    - abseil/base/endian
+    - abseil/base/raw_logging_internal
+    - abseil/meta/type_traits
+  - abseil/strings/str_format (0.20200225.0):
+    - abseil/strings/str_format_internal
+  - abseil/strings/str_format_internal (0.20200225.0):
+    - abseil/base/config
+    - abseil/base/core_headers
+    - abseil/meta/type_traits
+    - abseil/numeric/int128
+    - abseil/strings/strings
+    - abseil/types/span
+  - abseil/strings/strings (0.20200225.0):
+    - abseil/base/base
+    - abseil/base/bits
+    - abseil/base/config
+    - abseil/base/core_headers
+    - abseil/base/endian
+    - abseil/base/raw_logging_internal
+    - abseil/base/throw_delegate
+    - abseil/memory/memory
+    - abseil/meta/type_traits
+    - abseil/numeric/int128
+    - abseil/strings/internal
+  - abseil/time (0.20200225.0):
+    - abseil/time/internal (= 0.20200225.0)
+    - abseil/time/time (= 0.20200225.0)
+  - abseil/time/internal (0.20200225.0):
+    - abseil/time/internal/cctz (= 0.20200225.0)
+  - abseil/time/internal/cctz (0.20200225.0):
+    - abseil/time/internal/cctz/civil_time (= 0.20200225.0)
+    - abseil/time/internal/cctz/time_zone (= 0.20200225.0)
+  - abseil/time/internal/cctz/civil_time (0.20200225.0):
+    - abseil/base/config
+  - abseil/time/internal/cctz/time_zone (0.20200225.0):
+    - abseil/base/config
+    - abseil/time/internal/cctz/civil_time
+  - abseil/time/time (0.20200225.0):
+    - abseil/base/base
+    - abseil/base/core_headers
+    - abseil/base/raw_logging_internal
+    - abseil/numeric/int128
+    - abseil/strings/strings
+    - abseil/time/internal/cctz/civil_time
+    - abseil/time/internal/cctz/time_zone
+  - abseil/types (0.20200225.0):
+    - abseil/types/any (= 0.20200225.0)
+    - abseil/types/bad_any_cast (= 0.20200225.0)
+    - abseil/types/bad_any_cast_impl (= 0.20200225.0)
+    - abseil/types/bad_optional_access (= 0.20200225.0)
+    - abseil/types/bad_variant_access (= 0.20200225.0)
+    - abseil/types/compare (= 0.20200225.0)
+    - abseil/types/optional (= 0.20200225.0)
+    - abseil/types/span (= 0.20200225.0)
+    - abseil/types/variant (= 0.20200225.0)
+  - abseil/types/any (0.20200225.0):
+    - abseil/base/config
+    - abseil/base/core_headers
+    - abseil/meta/type_traits
+    - abseil/types/bad_any_cast
+    - abseil/utility/utility
+  - abseil/types/bad_any_cast (0.20200225.0):
+    - abseil/base/config
+    - abseil/types/bad_any_cast_impl
+  - abseil/types/bad_any_cast_impl (0.20200225.0):
+    - abseil/base/config
+    - abseil/base/raw_logging_internal
+  - abseil/types/bad_optional_access (0.20200225.0):
+    - abseil/base/config
+    - abseil/base/raw_logging_internal
+  - abseil/types/bad_variant_access (0.20200225.0):
+    - abseil/base/config
+    - abseil/base/raw_logging_internal
+  - abseil/types/compare (0.20200225.0):
+    - abseil/base/core_headers
+    - abseil/meta/type_traits
+  - abseil/types/optional (0.20200225.0):
+    - abseil/base/base_internal
+    - abseil/base/config
+    - abseil/base/core_headers
+    - abseil/memory/memory
+    - abseil/meta/type_traits
+    - abseil/types/bad_optional_access
+    - abseil/utility/utility
+  - abseil/types/span (0.20200225.0):
+    - abseil/algorithm/algorithm
+    - abseil/base/core_headers
+    - abseil/base/throw_delegate
+    - abseil/meta/type_traits
+  - abseil/types/variant (0.20200225.0):
+    - abseil/base/base_internal
+    - abseil/base/config
+    - abseil/base/core_headers
+    - abseil/meta/type_traits
+    - abseil/types/bad_variant_access
+    - abseil/utility/utility
+  - abseil/utility/utility (0.20200225.0):
+    - abseil/base/base_internal
+    - abseil/base/config
+    - abseil/meta/type_traits
+  - AgoraRtcEngine_iOS (3.6.2):
+    - AgoraRtcEngine_iOS/AINS (= 3.6.2)
+    - AgoraRtcEngine_iOS/AV1Dec (= 3.6.2)
+    - AgoraRtcEngine_iOS/ContentInspect (= 3.6.2)
+    - AgoraRtcEngine_iOS/FullAudioFormat (= 3.6.2)
+    - AgoraRtcEngine_iOS/JND (= 3.6.2)
+    - AgoraRtcEngine_iOS/ReplayKit (= 3.6.2)
+    - AgoraRtcEngine_iOS/ROIEnc (= 3.6.2)
+    - AgoraRtcEngine_iOS/RtcBasic (= 3.6.2)
+    - AgoraRtcEngine_iOS/SuperResolution (= 3.6.2)
+    - AgoraRtcEngine_iOS/VideoPreprocess (= 3.6.2)
+    - AgoraRtcEngine_iOS/VirtualBackground (= 3.6.2)
+  - AgoraRtcEngine_iOS/AINS (3.6.2)
+  - AgoraRtcEngine_iOS/AV1Dec (3.6.2)
+  - AgoraRtcEngine_iOS/ContentInspect (3.6.2)
+  - AgoraRtcEngine_iOS/FullAudioFormat (3.6.2)
+  - AgoraRtcEngine_iOS/JND (3.6.2)
+  - AgoraRtcEngine_iOS/ReplayKit (3.6.2)
+  - AgoraRtcEngine_iOS/ROIEnc (3.6.2)
+  - AgoraRtcEngine_iOS/RtcBasic (3.6.2)
+  - AgoraRtcEngine_iOS/SuperResolution (3.6.2)
+  - AgoraRtcEngine_iOS/VideoPreprocess (3.6.2)
+  - AgoraRtcEngine_iOS/VirtualBackground (3.6.2)
+  - ALCameraViewController (3.1)
+  - AlertBar (0.5.0)
+  - AppAuth (1.7.1):
+    - AppAuth/Core (= 1.7.1)
+    - AppAuth/ExternalUserAgent (= 1.7.1)
+  - AppAuth/Core (1.7.1)
+  - AppAuth/ExternalUserAgent (1.7.1):
+    - AppAuth/Core
+  - BadgeSwift (8.0.0)
+  - BoringSSL-GRPC (0.0.7):
+    - BoringSSL-GRPC/Implementation (= 0.0.7)
+    - BoringSSL-GRPC/Interface (= 0.0.7)
+  - BoringSSL-GRPC/Implementation (0.0.7):
+    - BoringSSL-GRPC/Interface (= 0.0.7)
+  - BoringSSL-GRPC/Interface (0.0.7)
+  - BottomPopup (0.6.0)
+  - BubbleTransition (4.0.0)
+  - CircleProgressButton (0.5.1)
+  - CircleProgressView (1.2.0)
+  - ContextMenu (0.4.0)
+  - DateTimePicker (2.5.3)
+  - DropDown (2.3.13)
+  - Firebase/AdMob (6.33.0):
+    - Firebase/CoreOnly
+    - Google-Mobile-Ads-SDK (~> 7.63)
+  - Firebase/Auth (6.33.0):
+    - Firebase/CoreOnly
+    - FirebaseAuth (~> 6.9.2)
+  - Firebase/CoreOnly (6.33.0):
+    - FirebaseCore (= 6.10.3)
+  - Firebase/Crashlytics (6.33.0):
+    - Firebase/CoreOnly
+    - FirebaseCrashlytics (~> 4.6.1)
+  - Firebase/Database (6.33.0):
+    - Firebase/CoreOnly
+    - FirebaseDatabase (~> 6.6.0)
+  - Firebase/Functions (6.33.0):
+    - Firebase/CoreOnly
+    - FirebaseFunctions (~> 2.9.0)
+  - Firebase/Messaging (6.33.0):
+    - Firebase/CoreOnly
+    - FirebaseMessaging (~> 4.7.0)
+  - Firebase/Storage (6.33.0):
+    - Firebase/CoreOnly
+    - FirebaseStorage (~> 3.9.0)
+  - FirebaseAnalytics (6.9.0):
+    - FirebaseCore (~> 6.10)
+    - FirebaseInstallations (~> 1.7)
+    - GoogleAppMeasurement (= 6.9.0)
+    - GoogleUtilities/AppDelegateSwizzler (~> 6.7)
+    - GoogleUtilities/MethodSwizzler (~> 6.7)
+    - GoogleUtilities/Network (~> 6.7)
+    - "GoogleUtilities/NSData+zlib (~> 6.7)"
+    - nanopb (~> 1.30906.0)
+  - FirebaseAuth (6.9.2):
+    - FirebaseCore (~> 6.10)
+    - GoogleUtilities/AppDelegateSwizzler (~> 6.7)
+    - GoogleUtilities/Environment (~> 6.7)
+    - GTMSessionFetcher/Core (~> 1.1)
+  - FirebaseCore (6.10.3):
+    - FirebaseCoreDiagnostics (~> 1.6)
+    - GoogleUtilities/Environment (~> 6.7)
+    - GoogleUtilities/Logger (~> 6.7)
+  - FirebaseCoreDiagnostics (1.7.0):
+    - GoogleDataTransport (~> 7.4)
+    - GoogleUtilities/Environment (~> 6.7)
+    - GoogleUtilities/Logger (~> 6.7)
+    - nanopb (~> 1.30906.0)
+  - FirebaseCrashlytics (4.6.2):
+    - FirebaseCore (~> 6.10)
+    - FirebaseInstallations (~> 1.6)
+    - GoogleDataTransport (~> 7.2)
+    - nanopb (~> 1.30906.0)
+    - PromisesObjC (~> 1.2)
+  - FirebaseDatabase (6.6.0):
+    - FirebaseCore (~> 6.10)
+    - leveldb-library (~> 1.22)
+  - FirebaseFirestore (1.19.0):
+    - abseil/algorithm (= 0.20200225.0)
+    - abseil/base (= 0.20200225.0)
+    - abseil/memory (= 0.20200225.0)
+    - abseil/meta (= 0.20200225.0)
+    - abseil/strings/strings (= 0.20200225.0)
+    - abseil/time (= 0.20200225.0)
+    - abseil/types (= 0.20200225.0)
+    - FirebaseCore (~> 6.10)
+    - "gRPC-C++ (~> 1.28.0)"
+    - leveldb-library (~> 1.22)
+    - nanopb (~> 1.30906.0)
+  - FirebaseFunctions (2.9.0):
+    - FirebaseCore (~> 6.10)
+    - GTMSessionFetcher/Core (~> 1.1)
+  - FirebaseInstallations (1.7.0):
+    - FirebaseCore (~> 6.10)
+    - GoogleUtilities/Environment (~> 6.7)
+    - GoogleUtilities/UserDefaults (~> 6.7)
+    - PromisesObjC (~> 1.2)
+  - FirebaseInstanceID (4.8.0):
+    - FirebaseCore (~> 6.10)
+    - FirebaseInstallations (~> 1.6)
+    - GoogleUtilities/Environment (~> 6.7)
+    - GoogleUtilities/UserDefaults (~> 6.7)
+  - FirebaseMessaging (4.7.1):
+    - FirebaseCore (~> 6.10)
+    - FirebaseInstanceID (~> 4.7)
+    - GoogleUtilities/AppDelegateSwizzler (~> 6.7)
+    - GoogleUtilities/Environment (~> 6.7)
+    - GoogleUtilities/Reachability (~> 6.7)
+    - GoogleUtilities/UserDefaults (~> 6.7)
+    - Protobuf (>= 3.9.2, ~> 3.9)
+  - FirebaseStorage (3.9.1):
+    - FirebaseCore (~> 6.10)
+    - GTMSessionFetcher/Core (~> 1.1)
+  - FirebaseUI/Auth (8.5.1):
+    - Firebase/Auth (~> 6.0)
+    - GoogleUtilities/UserDefaults
+  - FirebaseUI/Phone (8.5.1):
+    - FirebaseUI/Auth
+  - Google-Mobile-Ads-SDK (7.67.0):
+    - GoogleAppMeasurement (~> 6.0)
+    - GoogleUserMessagingPlatform (~> 1.1)
+  - GoogleAppMeasurement (6.9.0):
+    - GoogleUtilities/AppDelegateSwizzler (~> 6.7)
+    - GoogleUtilities/MethodSwizzler (~> 6.7)
+    - GoogleUtilities/Network (~> 6.7)
+    - "GoogleUtilities/NSData+zlib (~> 6.7)"
+    - nanopb (~> 1.30906.0)
+  - GoogleDataTransport (7.5.1):
+    - nanopb (~> 1.30906.0)
+  - GoogleSignIn (7.0.0):
+    - AppAuth (~> 1.5)
+    - GTMAppAuth (< 3.0, >= 1.3)
+    - GTMSessionFetcher/Core (< 4.0, >= 1.1)
+  - GoogleUserMessagingPlatform (1.4.0)
+  - GoogleUtilities (6.7.2):
+    - GoogleUtilities/AppDelegateSwizzler (= 6.7.2)
+    - GoogleUtilities/Environment (= 6.7.2)
+    - GoogleUtilities/ISASwizzler (= 6.7.2)
+    - GoogleUtilities/Logger (= 6.7.2)
+    - GoogleUtilities/MethodSwizzler (= 6.7.2)
+    - GoogleUtilities/Network (= 6.7.2)
+    - "GoogleUtilities/NSData+zlib (= 6.7.2)"
+    - GoogleUtilities/Reachability (= 6.7.2)
+    - GoogleUtilities/SwizzlerTestHelpers (= 6.7.2)
+    - GoogleUtilities/UserDefaults (= 6.7.2)
+  - GoogleUtilities/AppDelegateSwizzler (6.7.2):
+    - GoogleUtilities/Environment
+    - GoogleUtilities/Logger
+    - GoogleUtilities/Network
+  - GoogleUtilities/Environment (6.7.2):
+    - PromisesObjC (~> 1.2)
+  - GoogleUtilities/ISASwizzler (6.7.2)
+  - GoogleUtilities/Logger (6.7.2):
+    - GoogleUtilities/Environment
+  - GoogleUtilities/MethodSwizzler (6.7.2):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/Network (6.7.2):
+    - GoogleUtilities/Logger
+    - "GoogleUtilities/NSData+zlib"
+    - GoogleUtilities/Reachability
+  - "GoogleUtilities/NSData+zlib (6.7.2)"
+  - GoogleUtilities/Reachability (6.7.2):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/SwizzlerTestHelpers (6.7.2):
+    - GoogleUtilities/MethodSwizzler
+  - GoogleUtilities/UserDefaults (6.7.2):
+    - GoogleUtilities/Logger
+  - GrowingTextView (0.7.2)
+  - "gRPC-C++ (1.28.2)":
+    - "gRPC-C++/Implementation (= 1.28.2)"
+    - "gRPC-C++/Interface (= 1.28.2)"
+  - "gRPC-C++/Implementation (1.28.2)":
+    - abseil/container/inlined_vector (= 0.20200225.0)
+    - abseil/memory/memory (= 0.20200225.0)
+    - abseil/strings/str_format (= 0.20200225.0)
+    - abseil/strings/strings (= 0.20200225.0)
+    - abseil/types/optional (= 0.20200225.0)
+    - "gRPC-C++/Interface (= 1.28.2)"
+    - gRPC-Core (= 1.28.2)
+  - "gRPC-C++/Interface (1.28.2)"
+  - gRPC-Core (1.28.2):
+    - gRPC-Core/Implementation (= 1.28.2)
+    - gRPC-Core/Interface (= 1.28.2)
+  - gRPC-Core/Implementation (1.28.2):
+    - abseil/container/inlined_vector (= 0.20200225.0)
+    - abseil/memory/memory (= 0.20200225.0)
+    - abseil/strings/str_format (= 0.20200225.0)
+    - abseil/strings/strings (= 0.20200225.0)
+    - abseil/types/optional (= 0.20200225.0)
+    - BoringSSL-GRPC (= 0.0.7)
+    - gRPC-Core/Interface (= 1.28.2)
+  - gRPC-Core/Interface (1.28.2)
+  - GTMAppAuth (2.0.0):
+    - AppAuth/Core (~> 1.6)
+    - GTMSessionFetcher/Core (< 4.0, >= 1.5)
+  - GTMSessionFetcher/Core (1.7.2)
+  - Hero (1.6.1)
+  - ImageScrollView (1.9.2)
+  - iOSPhotoEditor (1.0.0)
+  - IQKeyboardManagerSwift (6.5.6)
+  - iRecordView (0.1.3)
+  - JFContactsPicker (2.0.0)
+  - KBStickerView (0.1.2)
+  - Kingfisher (6.2.1)
+  - LBTATools (1.0.12)
+  - leveldb-library (1.22.1)
+  - libPhoneNumber-iOS (0.9.15)
+  - LocationPicker (1.4.2)
+  - MarqueeLabel (4.0.5)
+  - nanopb (1.30906.0):
+    - nanopb/decode (= 1.30906.0)
+    - nanopb/encode (= 1.30906.0)
+  - nanopb/decode (1.30906.0)
+  - nanopb/encode (1.30906.0)
+  - NotificationBannerSwift (3.0.6):
+    - MarqueeLabel (~> 4.0.5)
+    - SnapKit (~> 5.0.1)
+  - NotificationView (0.2.5)
+  - Pageboy (4.0.2)
+  - Paystack (3.0.17):
+    - Paystack/Core (= 3.0.17)
+  - Paystack/Core (3.0.17)
+  - Permission/Camera (3.1.2):
+    - Permission/Core
+  - Permission/Contacts (3.1.2):
+    - Permission/Core
+  - Permission/Core (3.1.2)
+  - Permission/MediaLibrary (3.1.2):
+    - Permission/Core
+  - Permission/Microphone (3.1.2):
+    - Permission/Core
+  - Permission/Notifications (3.1.2):
+    - Permission/Core
+  - Permission/Photos (3.1.2):
+    - Permission/Core
+  - PromisesObjC (1.2.12)
+  - Protobuf (3.21.10)
+  - Realm (10.33.0):
+    - Realm/Headers (= 10.33.0)
+  - Realm/Headers (10.33.0)
+  - RealmSwift (10.33.0):
+    - Realm (= 10.33.0)
+  - RNCryptor (5.1.0)
+  - RxCocoa (5.1.1):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxFirebase/Database (0.3.8):
+    - RxFirebaseDatabase (~> 0.3)
+  - RxFirebase/Functions (0.3.8):
+    - RxFirebaseFunctions (~> 0.3)
+  - RxFirebase/Storage (0.3.8):
+    - RxFirebaseStorage (~> 0.3)
+  - RxFirebaseDatabase (0.3.8):
+    - FirebaseDatabase (~> 6)
+    - RxCocoa (~> 5)
+    - RxSwift (~> 5)
+  - RxFirebaseFunctions (0.3.8):
+    - FirebaseFunctions (~> 2.5)
+    - RxCocoa (~> 5)
+    - RxSwift (~> 5)
+  - RxFirebaseStorage (0.3.8):
+    - FirebaseStorage (~> 3)
+    - RxCocoa (~> 5)
+    - RxSwift (~> 5)
+  - RxOptional (4.1.0):
+    - RxCocoa (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.1.3):
+    - RxSwift (~> 5)
+  - RxSwift (5.1.1)
+  - SnapKit (5.0.1)
+  - SwiftEventBus (5.0.0)
+  - SwiftyCam (4.0.0)
+  - Tabman (3.0.2):
+    - Pageboy (~> 4.0.2)
+  - TabPageViewController (0.2.7)
+  - TTCardView (0.1.1)
+  - UIColor_Hex_Swift (5.1.0)
+  - "UITextView+Placeholder (1.4.0)"
+  - VirgilCrypto (6.0.1):
+    - VirgilCryptoFoundation (= 0.16.1)
+  - VirgilCryptoFoundation (0.16.1):
+    - VSCCrypto/Common (= 0.16.1)
+    - VSCCrypto/Foundation (= 0.16.1)
+  - VirgilCryptoPythia (0.16.1):
+    - VirgilCryptoFoundation (= 0.16.1)
+    - VSCCrypto/Common (= 0.16.1)
+    - VSCCrypto/Foundation (= 0.16.1)
+    - VSCCrypto/Pythia (= 0.16.1)
+  - VirgilCryptoRatchet (0.16.1):
+    - VirgilCryptoFoundation (= 0.16.1)
+    - VSCCrypto/Common (= 0.16.1)
+    - VSCCrypto/Foundation (= 0.16.1)
+    - VSCCrypto/Ratchet (= 0.16.1)
+  - VirgilE3Kit (3.0.1):
+    - VirgilSDKPythia (= 0.11.0)
+    - VirgilSDKRatchet (= 0.9.0)
+  - VirgilSDK (8.1.0):
+    - VirgilCrypto (~> 6.0)
+  - VirgilSDKPythia (0.11.0):
+    - VirgilCryptoPythia (~> 0.16.1)
+    - VirgilSDK (~> 8.1.0)
+  - VirgilSDKRatchet (0.9.0):
+    - VirgilCryptoRatchet (~> 0.16.1)
+    - VirgilSDK (~> 8.1.0)
+  - VSCCrypto/Common (0.16.1)
+  - VSCCrypto/Foundation (0.16.1)
+  - VSCCrypto/Pythia (0.16.1)
+  - VSCCrypto/Ratchet (0.16.1)
+  - WXImageCompress (0.1.3)
+  - ZIPFoundation (0.9.15)
+
+DEPENDENCIES:
+  - AgoraRtcEngine_iOS (= 3.6.2)
+  - ALCameraViewController (= 3.1)
+  - AlertBar (= 0.5.0)
+  - BadgeSwift (= 8.0.0)
+  - BottomPopup (= 0.6.0)
+  - BubbleTransition (= 4.0.0)
+  - CircleProgressButton (= 0.5.1)
+  - CircleProgressView (= 1.2.0)
+  - ContextMenu (= 0.4.0)
+  - DateTimePicker (= 2.5.3)
+  - DropDown
+  - Firebase/AdMob (= 6.33.0)
+  - Firebase/Auth
+  - Firebase/Crashlytics
+  - Firebase/Database (= 6.33.0)
+  - Firebase/Functions (= 6.33.0)
+  - Firebase/Messaging (= 6.33.0)
+  - Firebase/Storage (= 6.33.0)
+  - FirebaseAnalytics (= 6.9.0)
+  - FirebaseCore
+  - FirebaseFirestore
+  - FirebaseUI/Phone (= 8.5.1)
+  - GoogleSignIn
+  - GoogleUtilities
+  - GrowingTextView (= 0.7.2)
+  - Hero (= 1.6.1)
+  - ImageScrollView (= 1.9.2)
+  - iOSPhotoEditor
+  - IQKeyboardManagerSwift (= 6.5.6)
+  - iRecordView (= 0.1.3)
+  - JFContactsPicker (= 2.0.0)
+  - KBStickerView (= 0.1.2)
+  - Kingfisher (= 6.2.1)
+  - LBTATools (= 1.0.12)
+  - libPhoneNumber-iOS (= 0.9.15)
+  - LocationPicker (from `https://github.com/3llomi/LocationPicker`)
+  - NotificationBannerSwift (= 3.0.6)
+  - NotificationView (= 0.2.5)
+  - Paystack
+  - Permission/Camera (= 3.1.2)
+  - Permission/Contacts (= 3.1.2)
+  - Permission/MediaLibrary (= 3.1.2)
+  - Permission/Microphone (= 3.1.2)
+  - Permission/Notifications (= 3.1.2)
+  - Permission/Photos (= 3.1.2)
+  - RealmSwift
+  - RNCryptor (= 5.1.0)
+  - RxCocoa (= 5.1.1)
+  - RxFirebase/Database (= 0.3.8)
+  - RxFirebase/Functions (= 0.3.8)
+  - RxFirebase/Storage (= 0.3.8)
+  - RxOptional (= 4.1.0)
+  - RxSwift (= 5.1.1)
+  - SwiftEventBus (= 5.0.0)
+  - SwiftyCam (= 4.0.0)
+  - Tabman (~> 3.0)
+  - TabPageViewController
+  - TTCardView (= 0.1.1)
+  - UIColor_Hex_Swift (= 5.1.0)
+  - "UITextView+Placeholder (= 1.4.0)"
+  - VirgilE3Kit
+  - WXImageCompress (= 0.1.3)
+  - ZIPFoundation
+
+SPEC REPOS:
+  trunk:
+    - abseil
+    - AgoraRtcEngine_iOS
+    - ALCameraViewController
+    - AlertBar
+    - AppAuth
+    - BadgeSwift
+    - BoringSSL-GRPC
+    - BottomPopup
+    - BubbleTransition
+    - CircleProgressButton
+    - CircleProgressView
+    - ContextMenu
+    - DateTimePicker
+    - DropDown
+    - Firebase
+    - FirebaseAnalytics
+    - FirebaseAuth
+    - FirebaseCore
+    - FirebaseCoreDiagnostics
+    - FirebaseCrashlytics
+    - FirebaseDatabase
+    - FirebaseFirestore
+    - FirebaseFunctions
+    - FirebaseInstallations
+    - FirebaseInstanceID
+    - FirebaseMessaging
+    - FirebaseStorage
+    - FirebaseUI
+    - Google-Mobile-Ads-SDK
+    - GoogleAppMeasurement
+    - GoogleDataTransport
+    - GoogleSignIn
+    - GoogleUserMessagingPlatform
+    - GoogleUtilities
+    - GrowingTextView
+    - "gRPC-C++"
+    - gRPC-Core
+    - GTMAppAuth
+    - GTMSessionFetcher
+    - Hero
+    - ImageScrollView
+    - iOSPhotoEditor
+    - IQKeyboardManagerSwift
+    - iRecordView
+    - JFContactsPicker
+    - KBStickerView
+    - Kingfisher
+    - LBTATools
+    - leveldb-library
+    - libPhoneNumber-iOS
+    - MarqueeLabel
+    - nanopb
+    - NotificationBannerSwift
+    - NotificationView
+    - Pageboy
+    - Paystack
+    - Permission
+    - PromisesObjC
+    - Protobuf
+    - Realm
+    - RealmSwift
+    - RNCryptor
+    - RxCocoa
+    - RxFirebase
+    - RxFirebaseDatabase
+    - RxFirebaseFunctions
+    - RxFirebaseStorage
+    - RxOptional
+    - RxRelay
+    - RxSwift
+    - SnapKit
+    - SwiftEventBus
+    - SwiftyCam
+    - Tabman
+    - TabPageViewController
+    - TTCardView
+    - UIColor_Hex_Swift
+    - "UITextView+Placeholder"
+    - VirgilCrypto
+    - VirgilCryptoFoundation
+    - VirgilCryptoPythia
+    - VirgilCryptoRatchet
+    - VirgilE3Kit
+    - VirgilSDK
+    - VirgilSDKPythia
+    - VirgilSDKRatchet
+    - VSCCrypto
+    - WXImageCompress
+    - ZIPFoundation
+
+EXTERNAL SOURCES:
+  LocationPicker:
+    :git: https://github.com/3llomi/LocationPicker
+
+CHECKOUT OPTIONS:
+  LocationPicker:
+    :commit: 936d0af2bee4377a84e15314b91b4563d280a073
+    :git: https://github.com/3llomi/LocationPicker
+
+SPEC CHECKSUMS:
+  abseil: 6c8eb7892aefa08d929b39f9bb108e5367e3228f
+  AgoraRtcEngine_iOS: 5bf5d2bb6669a6f3606716a02f3fb3ac58708f25
+  ALCameraViewController: 144dea45fd749a623aafd8cb7b10cea88499fcc3
+  AlertBar: 5134161e088a7be32b76d5daddcc7326744015cf
+  AppAuth: e93b919be5dbcbba49555011ce94f7d716368574
+  BadgeSwift: a81547ffde1f462bb5fc02e3fa3fdcbc1b888354
+  BoringSSL-GRPC: 8edf627ee524575e2f8d19d56f068b448eea3879
+  BottomPopup: 1d5649a3b29396238f0e8f3c82075a7bfcf37ba7
+  BubbleTransition: 9d96f31375e0db46684e2060d3a601fa47d9f9c1
+  CircleProgressButton: 43585e5a2b1c96622f854d504bb5fe7a2ea0851f
+  CircleProgressView: 6b5b091d59dc5e5d2fda84e637a40498cdc39937
+  ContextMenu: f835e09a93f1c28c631b76ee94396d9570397fd1
+  DateTimePicker: 52701ddf656a50856d3510955933f767cd2c947c
+  DropDown: 8a2116376c1981888557f72ec2ffc9a5e0e456ec
+  Firebase: 8db6f2d1b2c5e2984efba4949a145875a8f65fe5
+  FirebaseAnalytics: 3bb096873ee0d7fa4b6c70f5e9166b6da413cc7f
+  FirebaseAuth: c92d49ada7948d1a23466e3db17bc4c2039dddc3
+  FirebaseCore: d889d9e12535b7f36ac8bfbf1713a0836a3012cd
+  FirebaseCoreDiagnostics: 770ac5958e1372ce67959ae4b4f31d8e127c3ac1
+  FirebaseCrashlytics: 1a747c9cc084a24dc6d9511c991db1cd078154eb
+  FirebaseDatabase: 13a865a4b85897462b930eb683bda8f52583713f
+  FirebaseFirestore: 9b2f1b9b9a6f2f0b6fb7484b9e32ab7e39243554
+  FirebaseFunctions: 27518fdd14d8b3a849e2443f921cd1b471ab7acd
+  FirebaseInstallations: 466c7b4d1f58fe16707693091da253726a731ed2
+  FirebaseInstanceID: bd3ffc24367f901a43c063b36c640b345a4a5dd1
+  FirebaseMessaging: 5eca4ef173de76253352511aafef774caa1cba2a
+  FirebaseStorage: 15e0f15ef3c7fec3d1899d68623e47d4447066b4
+  FirebaseUI: 9df84336a56f1d755ae4c37d5885c237d3084b6b
+  Google-Mobile-Ads-SDK: 8b58584890539de4527c47ef01e4da941a10bc8a
+  GoogleAppMeasurement: a6a3a066369828db64eda428cb2856dc1cdc7c4e
+  GoogleDataTransport: f56af7caa4ed338dc8e138a5d7c5973e66440833
+  GoogleSignIn: b232380cf495a429b8095d3178a8d5855b42e842
+  GoogleUserMessagingPlatform: b168e8c46cd8f92aa3e34b584c4ca78a411ce367
+  GoogleUtilities: 7f2f5a07f888cdb145101d6042bc4422f57e70b3
+  GrowingTextView: 876bf42005b5e4a4fd740597db12caaf41f0fe6c
+  "gRPC-C++": 13d8ccef97d5c3c441b7e3c529ef28ebee86fad2
+  gRPC-Core: 4afa11bfbedf7cdecd04de535a9e046893404ed5
+  GTMAppAuth: 99fb010047ba3973b7026e45393f51f27ab965ae
+  GTMSessionFetcher: 5595ec75acf5be50814f81e9189490412bad82ba
+  Hero: 215865ba3ae41dd9bb08cd6c60a645529c6fc94b
+  ImageScrollView: 329f63d29b22f21594250d31536aa83e018571ed
+  iOSPhotoEditor: 2951f35246a31dcb428b6292248a9c065582d03e
+  IQKeyboardManagerSwift: c7df9d2deb356c04522f5c4b7b6e4ce4d8ed94fe
+  iRecordView: 1204da2240abe68644b950a3477634ba344fccd2
+  JFContactsPicker: 2d2a8aeaf15932bd81a384d4f847c8d13200dfd9
+  KBStickerView: 646f61df7fc14310be28c960da1c06571c2ec63d
+  Kingfisher: e71c6fac2aebb1262888cabc2cb13d313362a48f
+  LBTATools: 389a901a01b9a56bea5682c40cd6e23530f40015
+  leveldb-library: 50c7b45cbd7bf543c81a468fe557a16ae3db8729
+  libPhoneNumber-iOS: 0a32a9525cf8744fe02c5206eb30d571e38f7d75
+  LocationPicker: 9af49409ec3ca13fdf4bf6b39e1a3c7dec029f4a
+  MarqueeLabel: 00cc0bcd087111dca575878b3531af980559707d
+  nanopb: 59317e09cf1f1a0af72f12af412d54edf52603fc
+  NotificationBannerSwift: 7021be2338f8f29cf424b0aca43da462bf9e2a1a
+  NotificationView: bcefe832af2bb65700406d0e4cb070cd9f433557
+  Pageboy: 34ff11e8d1041b81769d5bcde9b19a0cb7218bd9
+  Paystack: 5a7a9d5c47ddfd76e3d84550d9ff1f49bf6d284c
+  Permission: 4821359fb4d4367fb59aa16df38fbba5722ac842
+  PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
+  Protobuf: ced4c17d029d7566cbfc51cfb44193e4aaafae27
+  Realm: d4f810e161fa2c2c589b9860b6eb09238deacd73
+  RealmSwift: cef9946f09f2333a8f2ac8bac4f8de52fb9f5ac3
+  RNCryptor: a369134686cd2ad391323cc856b62e591193ba79
+  RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
+  RxFirebase: 45e6448c69c7212e21f8ba89144443f916437861
+  RxFirebaseDatabase: 5c1d3d31c9858f05ff6ad92e5b4b696354d1497b
+  RxFirebaseFunctions: c32622f9bb7c75c01a2489a38e376b5038e2d6f3
+  RxFirebaseStorage: 271184ff8f8d3660bfc751dcafdbb4dd01d0b8a1
+  RxOptional: b1fcd60856807a564c0215c2184b8d33e7826dc2
+  RxRelay: 5a18c2eb2d68326ebaf0112f80d837ae41b92b97
+  RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  SwiftEventBus: b30f617a6aca5a9336464b4d3f5931034762f2d5
+  SwiftyCam: 6e57914771d972fbe508e759dc9d0150a44a93fd
+  Tabman: 6326ec3a792da1c2a6e79c7eddb56af7b591c9d6
+  TabPageViewController: c37a1257a50c2b50712dde61bf499768eee95b67
+  TTCardView: 99cebbf2673d8df592f3264a51105b294d31c7ca
+  UIColor_Hex_Swift: 8be7432edacb7fa91c78aa05ef3c30b66e4f9415
+  "UITextView+Placeholder": d7b0c400921f66523f3a85d74f774512e14f6502
+  VirgilCrypto: 829e6d3c7c618e5a195026c9fb3047c9000a265e
+  VirgilCryptoFoundation: c432854cdf885a31541a74f30ee014294ffd3526
+  VirgilCryptoPythia: d7e82526d3b4bad5ad241e1d68c606fa19d93dcc
+  VirgilCryptoRatchet: e59acb8da2373d55f23cca8c9691660bd06aaa8a
+  VirgilE3Kit: ed7d53932b05d34428360bdea803b85ac76c42aa
+  VirgilSDK: 3eca4302edbdae65827ad86f31ab86e1c63c8f60
+  VirgilSDKPythia: 5509ff10bff6c78a56c18069050fc73c3616b796
+  VirgilSDKRatchet: 0a2a7aacb1afec193e0709c554e9a5790e302775
+  VSCCrypto: 02004c0859724ec558ea7eb795b96a405a647002
+  WXImageCompress: 86c7a4d028c7fc9c74181468c318a9ec688fcdac
+  ZIPFoundation: 063163dc828bf699c5be160eb4f58f676322d94f
+
+PODFILE CHECKSUM: 8d29269fe64a0abe25199d928fc7a74c04754e63
+
+COCOAPODS: 1.12.0

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MapViewController" customModule="FireApp" customModuleProvider="target">
+            <connections>
+                <outlet property="mapView" destination="rRd-T4-HfW" id="fOW-ih-84n"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rRd-T4-HfW">
+                    <rect key="frame" x="0.0" y="48" width="414" height="814"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="n8U-M1-dLM"/>
+                    </connections>
+                </mapView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6bM-QN-Ta6">
+                    <rect key="frame" x="32" y="788" width="350" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="350" id="bkz-fr-99k"/>
+                        <constraint firstAttribute="height" constant="40" id="hCo-KE-dpo"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" title="Select Location">
+                        <fontDescription key="titleFontDescription" type="system" pointSize="17"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="selectBtnTapped:" destination="-1" eventType="touchUpInside" id="Cce-OY-6Bs"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="rRd-T4-HfW" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="4b4-w2-3HF"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="rRd-T4-HfW" secondAttribute="trailing" id="8uy-PO-1XS"/>
+                <constraint firstItem="6bM-QN-Ta6" firstAttribute="centerX" secondItem="rRd-T4-HfW" secondAttribute="centerX" id="QsW-qZ-MXk"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="rRd-T4-HfW" secondAttribute="bottom" id="R0l-zO-6VE"/>
+                <constraint firstItem="6bM-QN-Ta6" firstAttribute="top" secondItem="rRd-T4-HfW" secondAttribute="bottom" constant="-74" id="nR5-gY-ywK"/>
+                <constraint firstItem="rRd-T4-HfW" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="zuw-fA-FHE"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="65.625"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="150" id="KGk-i7-Jjw" customClass="ReceivedTextCell" customModule="FireApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="318" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="318" height="150"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="c4K-FS-FFB">
+                        <rect key="frame" x="8" y="8" width="300" height="142"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V69-eO-pZs" customClass="UIViewWithRoundedCorners" customModule="FireApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="300" height="142"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="IoX-Ww-noU" userLabel="Reply and Group Stack">
+                                        <rect key="frame" x="0.0" y="2" width="300" height="85"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1vC-Mz-5rR" userLabel="Group Author Container" customClass="GroupAuthorView" customModule="FireApp" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="300" height="25"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="25" id="HAj-9M-1Gl"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JKl-5o-6T6" userLabel="Reply Container" customClass="ReplyView" customModule="FireApp" customModuleProvider="target">
+                                                <rect key="frame" x="6" y="31" width="300" height="50"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="do7-gd-kzl"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="fullRoundedCorners" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="JKl-5o-6T6" firstAttribute="leading" secondItem="IoX-Ww-noU" secondAttribute="leading" constant="6" id="Dtq-gE-rg2"/>
+                                            <constraint firstAttribute="bottom" secondItem="JKl-5o-6T6" secondAttribute="bottom" constant="4" id="XlD-gu-b1J"/>
+                                            <constraint firstItem="JKl-5o-6T6" firstAttribute="top" secondItem="1vC-Mz-5rR" secondAttribute="bottom" constant="6" id="g3P-Bt-91F"/>
+                                            <constraint firstAttribute="trailing" secondItem="JKl-5o-6T6" secondAttribute="trailing" constant="6" id="yBN-zL-ThL"/>
+                                        </constraints>
+                                    </stackView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Hello World Lorem ipsum" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fWA-ND-BqT" userLabel="Message TextView" customClass="UnSelectableTextView" customModule="FireApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="87" width="300" height="36"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="300" id="AOE-wR-Wh3"/>
+                                        </constraints>
+                                        <color key="textColor" red="0.1176470588" green="0.14117647059999999" blue="0.10980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
+                                    </textView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CLR-gs-jO1">
+                                        <rect key="frame" x="8" y="127" width="24" height="11"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="IoX-Ww-noU" firstAttribute="top" secondItem="V69-eO-pZs" secondAttribute="top" constant="2" id="2wC-ln-EYS"/>
+                                    <constraint firstItem="CLR-gs-jO1" firstAttribute="top" secondItem="fWA-ND-BqT" secondAttribute="bottom" constant="4" id="4qT-QZ-etO"/>
+                                    <constraint firstAttribute="bottom" secondItem="CLR-gs-jO1" secondAttribute="bottom" constant="4" id="CvV-hm-3I8"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="68" id="JQo-oZ-uzk"/>
+                                    <constraint firstAttribute="trailing" secondItem="IoX-Ww-noU" secondAttribute="trailing" id="OU2-h9-eUf"/>
+                                    <constraint firstItem="fWA-ND-BqT" firstAttribute="leading" secondItem="V69-eO-pZs" secondAttribute="leading" id="QXF-Ld-hXK"/>
+                                    <constraint firstItem="CLR-gs-jO1" firstAttribute="leading" secondItem="V69-eO-pZs" secondAttribute="leading" constant="8" id="VhX-Lb-apj"/>
+                                    <constraint firstAttribute="trailing" secondItem="fWA-ND-BqT" secondAttribute="trailing" id="m3f-7S-Y7Y"/>
+                                    <constraint firstItem="fWA-ND-BqT" firstAttribute="top" secondItem="IoX-Ww-noU" secondAttribute="bottom" id="vLb-yP-fVa"/>
+                                    <constraint firstItem="IoX-Ww-noU" firstAttribute="leading" secondItem="V69-eO-pZs" secondAttribute="leading" id="xtc-gU-6n7"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="fullRoundedCorners" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="c4K-FS-FFB" secondAttribute="bottom" id="IfH-AF-22k"/>
+                    <constraint firstItem="c4K-FS-FFB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="Qtn-2s-SkE"/>
+                    <constraint firstItem="c4K-FS-FFB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="fEh-wl-aog"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="containerView" destination="V69-eO-pZs" id="Rr8-WC-NSO"/>
+                <outlet property="groupAuthorAndReplyContainer" destination="IoX-Ww-noU" id="ACZ-XI-qG2"/>
+                <outlet property="groupAuthorView" destination="1vC-Mz-5rR" id="6KJ-0y-O4y"/>
+                <outlet property="replyView" destination="JKl-5o-6T6" id="EjW-Z1-yy5"/>
+                <outlet property="textView" destination="fWA-ND-BqT" id="ofK-gp-WoH"/>
+                <outlet property="timeLbl" destination="CLR-gs-jO1" id="gA8-kZ-07R"/>
+            </connections>
+            <point key="canvasLocation" x="130.43478260869566" y="139.28571428571428"/>
+        </tableViewCell>
+    </objects>
+</document>

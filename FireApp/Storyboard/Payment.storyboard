@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Payment View Controller-->
+        <scene sceneID="4iz-0J-dQb">
+            <objects>
+                <viewController storyboardIdentifier="PaymentViewController" id="0h1-a4-UKZ" customClass="PaymentViewController" customModule="FireApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NcR-MF-MIS"/>
+                        <viewControllerLayoutGuide type="bottom" id="gWm-6Q-dBm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="siv-jn-K8b">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JHR-bB-Ray">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+                                <color key="backgroundColor" name="main_app_color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="X55-ol-Ipg"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Dp-7E-w5i">
+                                <rect key="frame" x="0.0" y="48" width="320" height="486"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Net Balance:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2hz-JC-v1f">
+                                        <rect key="frame" x="20" y="20" width="104" height="21"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ysy-Vr-xAN">
+                                        <rect key="frame" x="133" y="20" width="12" height="21"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Net to Wallet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IEj-6x-muy">
+                                        <rect key="frame" x="20" y="73" width="280" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Number of Nets Required" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aCv-6g-PYA">
+                                        <rect key="frame" x="20" y="108" width="280" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="79O-vH-5A2">
+                                        <rect key="frame" x="20" y="162" width="280" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Charge ahead!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IW1-sc-cYU">
+                                        <rect key="frame" x="20" y="216" width="280" height="21.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <size key="shadowOffset" width="-1" height="1"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C61-QQ-dkI" customClass="PSTCKPaymentCardTextField">
+                                        <rect key="frame" x="20" y="244.5" width="280" height="40"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="kg1-ND-EkR"/>
+                                        </constraints>
+                                        <connections>
+                                            <action selector="cardDetailsChanged:" destination="0h1-a4-UKZ" eventType="valueChanged" id="TId-dX-p7z"/>
+                                        </connections>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6HA-8R-gXi">
+                                        <rect key="frame" x="20" y="304.5" width="280" height="40"/>
+                                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="bEO-yv-blt"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="Proceed to Pay">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="chargeCard:" destination="0h1-a4-UKZ" eventType="touchUpInside" id="NKj-0E-opP"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nuk-Ls-5BP">
+                                        <rect key="frame" x="28" y="354.5" width="264" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OUa-nC-a6h">
+                                        <rect key="frame" x="20" y="384.5" width="280" height="40"/>
+                                        <color key="backgroundColor" name="main_app_color"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="wfi-nL-poS"/>
+                                        </constraints>
+                                        <color key="tintColor" systemColor="tintColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Bank Transfer">
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="btnBankTransfer:" destination="0h1-a4-UKZ" eventType="touchUpInside" id="KcM-4u-ZFz"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="79O-vH-5A2" firstAttribute="top" secondItem="aCv-6g-PYA" secondAttribute="bottom" constant="20" id="09m-nM-v0u"/>
+                                    <constraint firstItem="C61-QQ-dkI" firstAttribute="trailing" secondItem="6HA-8R-gXi" secondAttribute="trailing" id="3aA-K0-bTG"/>
+                                    <constraint firstItem="nuk-Ls-5BP" firstAttribute="leading" secondItem="8Dp-7E-w5i" secondAttribute="leadingMargin" constant="20" id="7K3-v4-TAx"/>
+                                    <constraint firstItem="aCv-6g-PYA" firstAttribute="leading" secondItem="C61-QQ-dkI" secondAttribute="leading" id="7pf-Wt-sRh"/>
+                                    <constraint firstItem="79O-vH-5A2" firstAttribute="trailing" secondItem="IW1-sc-cYU" secondAttribute="trailing" id="7wx-67-DPS"/>
+                                    <constraint firstItem="79O-vH-5A2" firstAttribute="trailing" secondItem="IW1-sc-cYU" secondAttribute="trailing" id="9b7-mo-gFH"/>
+                                    <constraint firstItem="79O-vH-5A2" firstAttribute="leading" secondItem="aCv-6g-PYA" secondAttribute="leading" id="AGB-03-8Cp"/>
+                                    <constraint firstItem="Ysy-Vr-xAN" firstAttribute="leading" secondItem="2hz-JC-v1f" secondAttribute="trailing" constant="9" id="BHe-rl-zIU"/>
+                                    <constraint firstItem="aCv-6g-PYA" firstAttribute="trailing" secondItem="79O-vH-5A2" secondAttribute="trailing" id="DMz-JR-fgU"/>
+                                    <constraint firstAttribute="trailing" secondItem="IEj-6x-muy" secondAttribute="trailing" constant="20" id="DbG-7x-61u"/>
+                                    <constraint firstItem="IW1-sc-cYU" firstAttribute="top" secondItem="79O-vH-5A2" secondAttribute="bottom" constant="20" id="EKU-cv-6FY"/>
+                                    <constraint firstItem="79O-vH-5A2" firstAttribute="leading" secondItem="IW1-sc-cYU" secondAttribute="leading" id="LTO-si-HhI"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="nuk-Ls-5BP" secondAttribute="trailing" constant="20" id="LcS-bB-gOG"/>
+                                    <constraint firstItem="2hz-JC-v1f" firstAttribute="top" secondItem="8Dp-7E-w5i" secondAttribute="top" constant="20" id="Od9-0c-9fh"/>
+                                    <constraint firstItem="79O-vH-5A2" firstAttribute="centerX" secondItem="aCv-6g-PYA" secondAttribute="centerX" id="PuV-uR-cmA"/>
+                                    <constraint firstItem="6HA-8R-gXi" firstAttribute="leading" secondItem="OUa-nC-a6h" secondAttribute="leading" id="TTT-0S-LJu"/>
+                                    <constraint firstItem="nuk-Ls-5BP" firstAttribute="top" secondItem="6HA-8R-gXi" secondAttribute="bottom" constant="10" id="XvU-pc-CYD"/>
+                                    <constraint firstItem="6HA-8R-gXi" firstAttribute="leading" secondItem="C61-QQ-dkI" secondAttribute="leading" id="YuR-j3-Uqr"/>
+                                    <constraint firstItem="6HA-8R-gXi" firstAttribute="trailing" secondItem="OUa-nC-a6h" secondAttribute="trailing" id="aaE-V6-iIa"/>
+                                    <constraint firstItem="IEj-6x-muy" firstAttribute="top" secondItem="2hz-JC-v1f" secondAttribute="bottom" constant="32" id="ams-Aw-uQL"/>
+                                    <constraint firstItem="C61-QQ-dkI" firstAttribute="top" secondItem="IW1-sc-cYU" secondAttribute="bottom" constant="7" id="bVS-z2-i70"/>
+                                    <constraint firstItem="IW1-sc-cYU" firstAttribute="trailing" secondItem="C61-QQ-dkI" secondAttribute="trailing" id="dD8-EW-1og"/>
+                                    <constraint firstItem="aCv-6g-PYA" firstAttribute="top" secondItem="IEj-6x-muy" secondAttribute="bottom" constant="14" id="gRm-RV-Rfi"/>
+                                    <constraint firstItem="IW1-sc-cYU" firstAttribute="leading" secondItem="C61-QQ-dkI" secondAttribute="leading" id="hTx-CS-OYF"/>
+                                    <constraint firstItem="Ysy-Vr-xAN" firstAttribute="centerY" secondItem="2hz-JC-v1f" secondAttribute="centerY" id="iqk-XW-nMA"/>
+                                    <constraint firstItem="IEj-6x-muy" firstAttribute="trailing" secondItem="aCv-6g-PYA" secondAttribute="trailing" id="jcL-QW-Dsy"/>
+                                    <constraint firstItem="C61-QQ-dkI" firstAttribute="leading" secondItem="8Dp-7E-w5i" secondAttribute="leading" constant="20" id="kHl-Hs-2J3"/>
+                                    <constraint firstItem="6HA-8R-gXi" firstAttribute="top" secondItem="C61-QQ-dkI" secondAttribute="bottom" constant="20" id="n68-tU-k7h"/>
+                                    <constraint firstItem="IEj-6x-muy" firstAttribute="leading" secondItem="C61-QQ-dkI" secondAttribute="leading" id="ssq-C7-sZG"/>
+                                    <constraint firstItem="2hz-JC-v1f" firstAttribute="leading" secondItem="C61-QQ-dkI" secondAttribute="leading" id="vC8-Rb-Hkj"/>
+                                    <constraint firstItem="OUa-nC-a6h" firstAttribute="top" secondItem="nuk-Ls-5BP" secondAttribute="bottom" constant="30" id="z15-se-G51"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="JKW-8x-MsF"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="JHR-bB-Ray" firstAttribute="top" secondItem="siv-jn-K8b" secondAttribute="top" id="A3f-oa-HS4"/>
+                            <constraint firstItem="8Dp-7E-w5i" firstAttribute="leading" secondItem="JKW-8x-MsF" secondAttribute="leading" id="APn-zO-bnA"/>
+                            <constraint firstItem="8Dp-7E-w5i" firstAttribute="trailing" secondItem="JKW-8x-MsF" secondAttribute="trailing" id="Fi3-1Y-LiL"/>
+                            <constraint firstItem="JKW-8x-MsF" firstAttribute="bottom" secondItem="8Dp-7E-w5i" secondAttribute="bottom" id="WcO-Bk-lxU"/>
+                            <constraint firstItem="8Dp-7E-w5i" firstAttribute="top" secondItem="JKW-8x-MsF" secondAttribute="top" id="Yqh-ka-cXi"/>
+                            <constraint firstAttribute="trailing" secondItem="JHR-bB-Ray" secondAttribute="trailing" id="dUZ-rD-SV3"/>
+                            <constraint firstItem="JHR-bB-Ray" firstAttribute="leading" secondItem="JKW-8x-MsF" secondAttribute="leading" id="jou-of-60X"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="568"/>
+                    <connections>
+                        <outlet property="cardDetailsForm" destination="C61-QQ-dkI" id="JGq-1f-zp6"/>
+                        <outlet property="chargeCardButton" destination="6HA-8R-gXi" id="dHU-IF-cuF"/>
+                        <outlet property="emailTextField" destination="79O-vH-5A2" id="6ub-oT-GvC"/>
+                        <outlet property="netBalanceLabel" destination="Ysy-Vr-xAN" id="EDS-Bp-xPH"/>
+                        <outlet property="numberOfNetsTxtField" destination="aCv-6g-PYA" id="7vh-vp-iDI"/>
+                        <outlet property="tokenLabel" destination="nuk-Ls-5BP" id="TRm-pd-uaY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XGA-7d-grT" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="433.33333333333337" y="-2.0089285714285712"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="main_app_color">
+            <color red="0.12941176470588237" green="0.58823529411764708" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="150" id="Bsc-q3-37c" customClass="SentTextQuotedCell" customModule="FireApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="318" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Bsc-q3-37c" id="0GR-80-c9L">
+                <rect key="frame" x="0.0" y="0.0" width="318" height="150"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="NeQ-ZZ-Jp8">
+                        <rect key="frame" x="8" y="8" width="302" height="142"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jCy-iR-ivh" customClass="UIViewWithRoundedCorners" customModule="FireApp" customModuleProvider="target">
+                                <rect key="frame" x="2" y="0.0" width="300" height="142"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nUV-NH-b6H" userLabel="Reply Container" customClass="ReplyView" customModule="FireApp" customModuleProvider="target">
+                                        <rect key="frame" x="6" y="6" width="288" height="50"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="NCb-cY-pG6"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Hello World Lorem ipsum" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gx7-z7-bxi" userLabel="Message TextView">
+                                        <rect key="frame" x="0.0" y="56" width="300" height="62"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="300" id="apq-0n-tp7"/>
+                                        </constraints>
+                                        <color key="textColor" red="0.1176470588" green="0.14117647059999999" blue="0.10980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="8q1-wN-1Jq">
+                                        <rect key="frame" x="252" y="120" width="40" height="14"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oak-VR-g9z">
+                                                <rect key="frame" x="0.0" y="0.0" width="24" height="14"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check" translatesAutoresizingMaskIntoConstraints="NO" id="9PD-j0-fFo">
+                                                <rect key="frame" x="26" y="0.0" width="14" height="14"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="14" id="Jxa-7k-dF5"/>
+                                                    <constraint firstAttribute="height" constant="14" id="UDM-bI-DjE"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="startLocation">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="startColor" value="#b7000000"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="endColor" value="#00000000"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="horizontalMode" value="NO"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="diagonalMode" value="NO"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="centerColor" value="#66000000"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="endLocation">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="nUV-NH-b6H" firstAttribute="top" secondItem="jCy-iR-ivh" secondAttribute="top" constant="6" id="6xL-ir-JDg"/>
+                                    <constraint firstItem="Gx7-z7-bxi" firstAttribute="trailing" secondItem="8q1-wN-1Jq" secondAttribute="trailing" constant="8" id="FXW-72-teb"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="68" id="ZQP-AT-W3N"/>
+                                    <constraint firstAttribute="trailing" secondItem="nUV-NH-b6H" secondAttribute="trailing" constant="6" id="aNl-RN-2n9"/>
+                                    <constraint firstAttribute="bottom" secondItem="8q1-wN-1Jq" secondAttribute="bottom" constant="8" id="cWl-EV-dIK"/>
+                                    <constraint firstAttribute="trailing" secondItem="Gx7-z7-bxi" secondAttribute="trailing" id="cn0-I0-ZOk"/>
+                                    <constraint firstItem="nUV-NH-b6H" firstAttribute="leading" secondItem="jCy-iR-ivh" secondAttribute="leading" constant="6" id="fh9-DL-T85"/>
+                                    <constraint firstItem="8q1-wN-1Jq" firstAttribute="top" secondItem="Gx7-z7-bxi" secondAttribute="bottom" constant="2" id="glI-5g-YLe"/>
+                                    <constraint firstItem="Gx7-z7-bxi" firstAttribute="leading" secondItem="jCy-iR-ivh" secondAttribute="leading" id="pEn-tT-shZ"/>
+                                    <constraint firstItem="Gx7-z7-bxi" firstAttribute="top" secondItem="nUV-NH-b6H" secondAttribute="bottom" id="x8o-Hr-zC4"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="fullRoundedCorners" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="NeQ-ZZ-Jp8" secondAttribute="bottom" id="cEh-0F-5du"/>
+                    <constraint firstItem="NeQ-ZZ-Jp8" firstAttribute="top" secondItem="0GR-80-c9L" secondAttribute="top" constant="8" id="sUP-07-8Qt"/>
+                    <constraint firstAttribute="trailing" secondItem="NeQ-ZZ-Jp8" secondAttribute="trailing" constant="8" id="tXk-rg-GTX"/>
+                    <constraint firstItem="NeQ-ZZ-Jp8" firstAttribute="leading" secondItem="0GR-80-c9L" secondAttribute="leading" constant="8" id="uCB-aM-3Vz"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="0Bh-fJ-Liz"/>
+            <connections>
+                <outlet property="containerView" destination="jCy-iR-ivh" id="9qI-gP-nIm"/>
+                <outlet property="messageText" destination="Gx7-z7-bxi" id="DL1-pB-J5D"/>
+                <outlet property="replyView" destination="nUV-NH-b6H" id="1Fb-l3-gJI"/>
+                <outlet property="stateImage" destination="9PD-j0-fFo" id="Jub-ie-lg6"/>
+                <outlet property="timeLbl" destination="oak-VR-g9z" id="apm-30-cTo"/>
+            </connections>
+            <point key="canvasLocation" x="130.43478260869566" y="139.28571428571428"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="check" width="24" height="24"/>
+    </resources>
+</document>
